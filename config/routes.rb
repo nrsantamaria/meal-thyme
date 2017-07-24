@@ -5,8 +5,6 @@ Rails.application.routes.draw do
         sessions: 'users/sessions'
       }
 
-
-
   resources :users
   resources :home
   root :to => 'home#index'
