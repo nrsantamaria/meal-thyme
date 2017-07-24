@@ -6,6 +6,11 @@ Rails.application.routes.draw do
       }
 
   resources :users
-  resources :home
+  resources :home do
+    collection do
+      get :about
+      get :faqs
+    end
+  end
   root :to => 'home#index'
 end

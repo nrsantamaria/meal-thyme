@@ -8,10 +8,21 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
   </head>
-  <div class="container">
-    <%= render 'layouts/messages' %>
-  </div>
+  <%= render 'layouts/messages' %>
   <body>
     <%= yield %>
+    <footer class="bottom-nav">
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <%= link_to 'Home', '/', {class: "navbar-brand"} %>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "About", about_home_index_path %></li>
+            <li><%= link_to "FAQs", faqs_home_index_path %></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
