@@ -47,6 +47,9 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 |FAQ page, how to use system|||
 |About page, goal and contact info.|||
 
+## Resources
+* [DeviseMailer](https://rubyonrailshelp.wordpress.com/2014/01/02/setting-up-mailer-using-devise-for-forgot-password/)
+
 ## Known Bugs
 * N/A
 
