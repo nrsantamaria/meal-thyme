@@ -11,9 +11,9 @@
         1,
         1,
         1,
-        null,
         1,
-        1,
+        0,
+        0,
         null,
         null
       ],
@@ -718,7 +718,7 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
         null,
         null,
@@ -836,6 +836,8 @@
       ],
       "/Users/nickys/Desktop/meal-thyme/app/controllers/users_controller.rb": [
         1,
+        1,
+        0,
         null,
         1,
         0,
@@ -876,6 +878,6 @@
         null
       ]
     },
-    "timestamp": 1500919588
+    "timestamp": 1500921086
   }
 }
