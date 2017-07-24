@@ -28,6 +28,19 @@ An meal planning app.
 ## Seed database
 * `$ rake db:seed`
 
+## Email set up
+* Create an .env file and Procfile in your root directory, add the following:
+```
+_meal-thyme/.env_
+GMAIL_DOMAIN=yoururl.com
+GMAIL_USERNAME=support@yoururl.com
+GMAIL_PASSWORD=password12345
+
+_meal-thyme/Procfile_
+web: bundle exec rails s
+
+```
+
 ## Development server
 
 Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
