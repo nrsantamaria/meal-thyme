@@ -1,6 +1,12 @@
 <div class="jumbotron title">
-  <%= image_tag('textlogo.png', size: "250x250",  alt:'logo') %>
-  <div class="sign-in">
-    <%= render 'users/sessions/new' %>
+  <div class="row">
+    <div class="col-md-6">
+      <%= image_tag('textlogo.png', size: "400x400",  alt:'logo', id:'logo') %>
+    </div>
+    <div class="col-md-6">
+      <div class="sign-in">
+        <%= render 'users/sessions/new' %>
+      </div>
+    </div>
   </div>
 </div>
