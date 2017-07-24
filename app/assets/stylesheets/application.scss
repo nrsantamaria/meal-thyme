@@ -2,7 +2,8 @@
 @import 'bootstrap';
 
 .title {
-  margin-top: 10%;
+  margin-top: 5%;
+  // background-color: #A4EDE1;
 }
 
 #logo {
@@ -11,5 +12,9 @@
 }
 
 .sign-in, .log-in {
-  padding: 5%;
+  padding-right: 5%;
+}
+
+body {
+  font-family: 'Zilla Slab', serif;
 }
