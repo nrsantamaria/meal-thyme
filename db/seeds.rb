@@ -9,10 +9,10 @@ class Seed
 
   def self.begin
     seed = Seed.new
-    seed.write_json
+    seed.add_recipes
   end
 
-  def write_json
+  def add_recipes
     recipePath = "#{Rails.root}/public/recipes7.25.v1.json"
     recipes = JSON.parse(File.read(recipePath))
     recipes.each do |recipe|
@@ -21,7 +21,7 @@ class Seed
       instructionsObject.each do |instruction|
       	steps.push(instruction['step'])
       end
-      puts(steps);
+      Recipe.create!(title: recipe['title'], imageUrl: recipe['image'], calories: recipe['calories'], protein: recipe['protein'], fat: recipe['fat'], carbohydrates: recipe['carbs'], instructions: steps)
     end
   end
 end

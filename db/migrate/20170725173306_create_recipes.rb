@@ -7,8 +7,7 @@ class CreateRecipes < ActiveRecord::Migration[5.1]
       t.integer :protein
       t.integer :fat
       t.integer :carbohydrates
-      t.string :intructions
-      t.integer :user_id
+      t.string :instructions
     end
   end
 end
