@@ -1,9 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/nickys/Desktop/meal-thyme/spec/features/index_path_spec.rb": [
+      "/Users/nickys/Desktop/meal-thyme/spec/features/forget_password_spec.rb": [
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -165,6 +170,10 @@
         null,
         null,
         null,
+        null,
+        1,
+        null,
+        1,
         null,
         1,
         null,
@@ -589,15 +598,15 @@
       "/Users/nickys/Desktop/meal-thyme/app/helpers/content_helper.rb": [
         1,
         1,
-        16,
+        20,
         null,
         null,
         1,
-        4,
+        5,
         null,
         null,
         1,
-        24,
+        30,
         null,
         null
       ],
@@ -791,7 +800,7 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null,
@@ -882,6 +891,16 @@
         1,
         null
       ],
+      "/Users/nickys/Desktop/meal-thyme/spec/features/index_path_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/nickys/Desktop/meal-thyme/spec/features/log_out_spec.rb": [
         1,
         null,
@@ -950,6 +969,6 @@
         null
       ]
     },
-    "timestamp": 1500996397
+    "timestamp": 1500998455
   }
 }
