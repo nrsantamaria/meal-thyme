@@ -32,7 +32,6 @@
 
 .title {
   margin-top: 5%;
-  // background-color: #A4EDE1;
 }
 
 #logo {
@@ -50,4 +49,11 @@ body {
 
 .navbar-default {
   background-color: white;
+  .navbar-brand {
+    color: #7bbc9b;
+  }
+}
+
+.body {
+  margin-bottom: 10%;
 }
