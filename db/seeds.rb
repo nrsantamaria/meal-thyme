@@ -16,9 +16,12 @@ class Seed
     recipePath = "#{Rails.root}/public/recipes7.25.v1.json"
     recipes = JSON.parse(File.read(recipePath))
     recipes.each do |recipe|
-      
-      puts(recipe['title'])
-      # puts(recipe[1][0]['title'])
+      instructionsObject = recipe['analyzedInstructions'][0]['steps']
+      steps = [];
+      instructionsObject.each do |instruction|
+      	steps.push(instruction['step'])
+      end
+      puts(steps);
     end
   end
 end
