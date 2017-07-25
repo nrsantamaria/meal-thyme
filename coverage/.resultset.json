@@ -568,12 +568,14 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         1,
         null
       ],
       "/Users/nickys/Desktop/meal-thyme/app/models/user.rb": [
+        1,
         1,
         null,
         null,
@@ -894,6 +896,11 @@
         1,
         null
       ],
+      "/Users/nickys/Desktop/meal-thyme/app/models/recipe.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/nickys/Desktop/meal-thyme/spec/factories.rb": [
         1,
         1,
@@ -990,6 +997,13 @@
         null,
         null
       ],
+      "/Users/nickys/Desktop/meal-thyme/spec/models/recipe_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null
+      ],
       "/Users/nickys/Desktop/meal-thyme/spec/models/user_spec.rb": [
         1,
         null,
@@ -997,9 +1011,10 @@
         2,
         2,
         2,
+        2,
         null
       ]
     },
-    "timestamp": 1501003814
+    "timestamp": 1501004549
   }
 }
