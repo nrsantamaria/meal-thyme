@@ -10,6 +10,7 @@ class Seed
   def self.begin
     seed = Seed.new
     seed.add_recipes
+    seed.add_admin
   end
 
   def add_recipes
@@ -23,6 +24,10 @@ class Seed
       end
       Recipe.create!(title: recipe['title'], imageUrl: recipe['image'], calories: recipe['calories'], protein: recipe['protein'], fat: recipe['fat'], carbohydrates: recipe['carbs'], instructions: steps)
     end
+  end
+
+  def add_admin
+    User.create!(username: 'admin', email: 'admin@email.com', password: '123456', admin: true)
   end
 end
 
