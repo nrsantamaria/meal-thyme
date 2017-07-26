@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-26T10:47:55-07:00">2017-07-26T10:47:55-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-26T10:50:20-07:00">2017-07-26T10:50:20-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.76%</span></span>
+    (<span class="covered_percent"><span class="green">96.07%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.49
+         1.51
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>52</b> files in total.
-    <b>377</b> relevant lines. 
-    <span class="green"><b>361</b> lines covered</span> and
-    <span class="red"><b>16</b> lines missed </span>
+    <b>53</b> files in total.
+    <b>382</b> relevant lines. 
+    <span class="green"><b>367</b> lines covered</span> and
+    <span class="red"><b>15</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -162,12 +162,12 @@
       
       <tr>
         <td class="strong"><a href="#9c0b5192c8281228f0000ef654daf666c96fce36" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="yellow strong">87.5 %</td>
+        <td class="green strong">100.0 %</td>
         <td>14</td>
         <td>8</td>
-        <td>7</td>
-        <td>1</td>
-        <td>2.9</td>
+        <td>8</td>
+        <td>0</td>
+        <td>3.0</td>
       </tr>
       
       <tr>
@@ -187,7 +187,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>21.0</td>
+        <td>22.6</td>
       </tr>
       
       <tr>
@@ -526,6 +526,16 @@
         <td>9</td>
         <td>6</td>
         <td>6</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#522e0c72e6e3cdc21011a42a09b9bb0a0d4967e1" class="src_link" title="spec/features/user_index_redirect_spec.rb">spec/features/user_index_redirect_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -2556,11 +2566,11 @@
         <div class="source_table" id="9c0b5192c8281228f0000ef654daf666c96fce36">
   <div class="header">
     <h3>app/controllers/users_controller.rb</h3>
-    <h4><span class="yellow">87.5 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>8</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -2609,8 +2619,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">    redirect_to &#39;/&#39;</code>
         </li>
@@ -2713,8 +2723,8 @@
           <code class="ruby">  def resource_name</code>
         </li>
       
-        <li class="covered" data-hits="52" data-linenumber="3">
-          <span class="hits">52</span>
+        <li class="covered" data-hits="56" data-linenumber="3">
+          <span class="hits">56</span>
           
           <code class="ruby">    :user</code>
         </li>
@@ -2737,8 +2747,8 @@
           <code class="ruby">  def resource</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="7">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="7">
+          <span class="hits">14</span>
           
           <code class="ruby">    @resource ||= User.new</code>
         </li>
@@ -2761,8 +2771,8 @@
           <code class="ruby">  def devise_mapping</code>
         </li>
       
-        <li class="covered" data-hits="78" data-linenumber="11">
-          <span class="hits">78</span>
+        <li class="covered" data-hits="84" data-linenumber="11">
+          <span class="hits">84</span>
           
           <code class="ruby">    @devise_mapping ||= Devise.mappings[:user]</code>
         </li>
@@ -7440,6 +7450,73 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="522e0c72e6e3cdc21011a42a09b9bb0a0d4967e1">
+  <div class="header">
+    <h3>spec/features/user_index_redirect_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &#39;the user index route&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;redirects to the home index path&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit users_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
