@@ -12,6 +12,6 @@ FactoryGirl.define do
     protein(50)
     fat(50)
     carbohydrates(20)
-    instructions('{Preheat oven to 500 degrees, Cook chicken, Eat}')
+    instructions('Preheat oven to 500 degrees, Cook chicken')
   end
 end

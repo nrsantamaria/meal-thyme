@@ -6,30 +6,30 @@
     <%= f.text_field :title, class:'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.label :imageUrl %>
+    <%= f.label :image_link %>
     <%= f.text_field :imageUrl, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :calories %>
-    <%= f.integer :calories, class: 'form-control' %>
+    <%= f.number_field :calories, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :protein %>
-    <%= f.integer :protein, class: 'form-control' %>
+    <%= f.number_field :protein, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :fat %>
-    <%= f.integer :fat, class: 'form-control' %>
+    <%= f.number_field :fat, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :carbohydrates %>
-    <%= f.integer :carbohydrates, class: 'form-control' %>
+    <%= f.number_field :carbohydrates, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :instructions %>
     <%= f.text_area :instructions, class: 'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.submit :null, class: 'btn btn-default'%>
+    <%= f.submit nil, class: 'btn btn-default'%>
   </div>
 <% end %>
