@@ -6,6 +6,8 @@ class RecipesController < ApplicationController
 
   def index
     @recipes = Recipe.all
+    @user = current_user
+    @meal = @user.meals.new
   end
 
   def show

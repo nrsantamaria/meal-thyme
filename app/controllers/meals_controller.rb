@@ -1,13 +1,13 @@
 class MealsController < ApplicationController
-  
+
+  def index
+    @meals = Meal.all
+  end
+
   def create
     @user = current_user
-    @meal = @user.meals.new(meal_params)
-    if @user.save
-      redirect_to user_path(@user)
-    else
-      render :new
-    end
+    @meal = @user.meals.create!(meal_params)
+    redirect_to user_path(@user)
   end
 
   private

@@ -1,0 +1,9 @@
+<%= month_calendar events: @meals do |date, meals| %>
+  <%= date %>
+
+  <% meals.each do |meal| %>
+    <div>
+      <%= link_to meal.category, recipe_path(meal.recipe_id) %>
+    </div>
+  <% end %>
+<% end %>

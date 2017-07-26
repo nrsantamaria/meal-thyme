@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :recipes
+  resources :meals
   resources :home do
     collection do
       get :about
