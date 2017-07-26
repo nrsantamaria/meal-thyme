@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe 'the admin edit a recipe process' do
-  it 'edits a recipe' do
+describe 'the admin delete a recipe process' do
+  it 'deletes a new recipe' do
     visit '/'
     user = User.create!(:username => 'admin', :email => 'admin@email.com', :password => '123456', :admin => true)
     recipe = FactoryGirl.create(:recipe)
@@ -10,9 +10,7 @@ describe 'the admin edit a recipe process' do
     fill_in 'user[password]', :with => user.password
     click_on 'Log in'
     visit recipe_path(recipe)
-    click_on 'Edit'
-    fill_in 'recipe[title]', :with => recipe.title
-    click_on 'Update Recipe'
-    expect(page).to have_content 'Instructions'
+    click_on 'Delete'
+    expect(page).to have_content 'Recipes'
   end
 end
