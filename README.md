@@ -4,7 +4,7 @@
 
 ## Description
 
-An meal planning app.
+An meal planning app. [Heroku](https://meal-thyme.herokuapp.com/)
 
 ## Technologies Used / Prerequisites
 
