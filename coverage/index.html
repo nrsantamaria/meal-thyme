@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-26T10:44:18-07:00">2017-07-26T10:44:18-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-26T10:47:55-07:00">2017-07-26T10:47:55-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.34%</span></span>
+    (<span class="covered_percent"><span class="green">95.76%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.42
+         1.49
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>51</b> files in total.
-    <b>365</b> relevant lines. 
-    <span class="green"><b>348</b> lines covered</span> and
-    <span class="red"><b>17</b> lines missed </span>
+    <b>52</b> files in total.
+    <b>377</b> relevant lines. 
+    <span class="green"><b>361</b> lines covered</span> and
+    <span class="red"><b>16</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -77,7 +77,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
@@ -92,12 +92,12 @@
       
       <tr>
         <td class="strong"><a href="#3f9b85d410cc919cdeed3d4856924b7f3ebc81e9" class="src_link" title="app/controllers/recipes_controller.rb">app/controllers/recipes_controller.rb</a></td>
-        <td class="yellow strong">89.66 %</td>
+        <td class="green strong">93.1 %</td>
         <td>51</td>
         <td>29</td>
-        <td>26</td>
-        <td>3</td>
-        <td>1.2</td>
+        <td>27</td>
+        <td>2</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -147,7 +147,7 @@
         <td>13</td>
         <td>13</td>
         <td>0</td>
-        <td>2.2</td>
+        <td>2.4</td>
       </tr>
       
       <tr>
@@ -167,7 +167,7 @@
         <td>8</td>
         <td>7</td>
         <td>1</td>
-        <td>2.6</td>
+        <td>2.9</td>
       </tr>
       
       <tr>
@@ -187,7 +187,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>17.9</td>
+        <td>21.0</td>
       </tr>
       
       <tr>
@@ -481,6 +481,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#0da15f9ee03489e8d0fe0cd0fff1276948f23890" class="src_link" title="spec/features/recipe_authentication_spec.rb">spec/features/recipe_authentication_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>12</td>
+        <td>12</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#b029fa3583fe3aa2126ef35b6a984a6f7fdf3ad9" class="src_link" title="spec/features/show_recipe_spec.rb">spec/features/show_recipe_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>9</td>
@@ -712,8 +722,8 @@
           <code class="ruby">  def admin?</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="7">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="7">
+          <span class="hits">8</span>
           
           <code class="ruby">    current_user &amp;&amp; current_user.admin</code>
         </li>
@@ -871,11 +881,11 @@
         <div class="source_table" id="3f9b85d410cc919cdeed3d4856924b7f3ebc81e9">
   <div class="header">
     <h3>app/controllers/recipes_controller.rb</h3>
-    <h4><span class="yellow">89.66 %</span> covered</h4>
+    <h4><span class="green">93.1 %</span> covered</h4>
     <div>
       <b>29</b> relevant lines. 
-      <span class="green"><b>26</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <span class="green"><b>27</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -894,14 +904,14 @@
           <code class="ruby">  before_action :only =&gt; [:new, :edit, :destroy] do</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3">
-          
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
           <code class="ruby">    (flash.alert = &quot;You are not authorized to access that page.&quot;;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="4">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="4">
+          <span class="hits">5</span>
           
           <code class="ruby">    redirect_to &#39;/&#39;) unless admin?</code>
         </li>
@@ -2231,8 +2241,8 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="11">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="11">
+          <span class="hits">7</span>
           
           <code class="ruby">    super</code>
         </li>
@@ -2303,8 +2313,8 @@
           <code class="ruby">  def configure_sign_in_params</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="23">
+          <span class="hits">7</span>
           
           <code class="ruby">    devise_parameter_sanitizer.permit(:sign_in, keys: [:username])</code>
         </li>
@@ -2327,8 +2337,8 @@
           <code class="ruby">  def after_sign_in_path_for(resource_or_scope)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="27">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="27">
+          <span class="hits">7</span>
           
           <code class="ruby">    @user</code>
         </li>
@@ -2575,8 +2585,8 @@
           <code class="ruby">    (flash.alert = &quot;You must be logged in to access that page.&quot;;</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="4">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="10" data-linenumber="4">
+          <span class="hits">10</span>
           
           <code class="ruby">    redirect_to &#39;/&#39;) unless current_user</code>
         </li>
@@ -2623,8 +2633,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="12">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="12">
+          <span class="hits">8</span>
           
           <code class="ruby">    @user = User.find(params[:id])</code>
         </li>
@@ -2703,8 +2713,8 @@
           <code class="ruby">  def resource_name</code>
         </li>
       
-        <li class="covered" data-hits="44" data-linenumber="3">
-          <span class="hits">44</span>
+        <li class="covered" data-hits="52" data-linenumber="3">
+          <span class="hits">52</span>
           
           <code class="ruby">    :user</code>
         </li>
@@ -2727,8 +2737,8 @@
           <code class="ruby">  def resource</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="7">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="13" data-linenumber="7">
+          <span class="hits">13</span>
           
           <code class="ruby">    @resource ||= User.new</code>
         </li>
@@ -2751,8 +2761,8 @@
           <code class="ruby">  def devise_mapping</code>
         </li>
       
-        <li class="covered" data-hits="66" data-linenumber="11">
-          <span class="hits">66</span>
+        <li class="covered" data-hits="78" data-linenumber="11">
+          <span class="hits">78</span>
           
           <code class="ruby">    @devise_mapping ||= Devise.mappings[:user]</code>
         </li>
@@ -6975,6 +6985,115 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="0da15f9ee03489e8d0fe0cd0fff1276948f23890">
+  <div class="header">
+    <h3>spec/features/recipe_authentication_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &#39;the recipe authentication process&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;sends flash message when user attempts to add a new recipe&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &#39;/&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    recipe = FactoryGirl.create(:recipe)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;user[username]&#39;, :with =&gt; user.username</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;user[email]&#39;, :with =&gt; user.email</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;user[password]&#39;, :with =&gt; user.password</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit new_recipe_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39;You are not authorized to access that page.&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>

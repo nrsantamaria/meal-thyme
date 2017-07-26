@@ -600,7 +600,7 @@
         1,
         null,
         1,
-        7,
+        8,
         null,
         null,
         1,
@@ -616,15 +616,15 @@
       "/Users/nickys/Desktop/meal-thyme/app/helpers/content_helper.rb": [
         1,
         1,
-        44,
+        52,
         null,
         null,
         1,
-        11,
+        13,
         null,
         null,
         1,
-        66,
+        78,
         null,
         null
       ],
@@ -659,8 +659,8 @@
       "/Users/nickys/Desktop/meal-thyme/app/controllers/recipes_controller.rb": [
         1,
         1,
-        0,
-        3,
+        1,
+        5,
         null,
         null,
         1,
@@ -876,7 +876,7 @@
         null,
         null,
         1,
-        6,
+        7,
         null,
         null,
         null,
@@ -888,11 +888,11 @@
         null,
         null,
         1,
-        6,
+        7,
         null,
         null,
         1,
-        6,
+        7,
         null,
         null,
         null
@@ -931,7 +931,7 @@
         1,
         1,
         1,
-        9,
+        10,
         null,
         null,
         1,
@@ -939,7 +939,7 @@
         null,
         null,
         1,
-        7,
+        8,
         null,
         null
       ],
@@ -1091,6 +1091,23 @@
         null,
         null
       ],
+      "/Users/nickys/Desktop/meal-thyme/spec/features/recipe_authentication_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/nickys/Desktop/meal-thyme/spec/features/show_recipe_spec.rb": [
         1,
         null,
@@ -1161,6 +1178,6 @@
         null
       ]
     },
-    "timestamp": 1501091058
+    "timestamp": 1501091275
   }
 }
