@@ -14,7 +14,7 @@ class Seed
   end
 
   def add_recipes
-    recipePath = "#{Rails.root}/public/recipes7.25.v1.json"
+    recipePath = "#{Rails.root}/public/recipes7.27.v1.json"
     recipes = JSON.parse(File.read(recipePath))
     recipes.each do |recipe|
       instructionsObject = recipe['analyzedInstructions'][0]['steps']
