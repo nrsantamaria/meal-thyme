@@ -5,7 +5,11 @@ Rails.application.routes.draw do
         sessions: 'users/sessions'
       }
 
-  resources :users
+  resources :users do
+    collection do
+      get :details
+    end
+  end
   resources :recipes
   resources :meals
   resources :home do

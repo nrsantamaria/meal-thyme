@@ -1,6 +1,18 @@
 <h2>Profile Page</h2>
+<ul class="nav justify-content-end nav-tabs">
+  <li class="nav-item">
+    <%= link_to "User Details",  details_users_path(), id:'details-link', remote: true %>
+  </li>
+  <li class="nav-item">
+    <%= link_to "Edit Account", edit_user_registration_path() %>
+  </li>
+  <li class="nav-item">
+    <%= link_to "View Recipes", recipes_path %>
+  </li>
+  <li class="nav-item">
+    <%= link_to "View Meal Plan", meals_path %>
+  </li>
+</ul>
+<div class="container" id="profile-page">
 
-<p>Username: <%= @user.username %></p>
-<p><%= link_to "Edit Account", edit_user_registration_path() %></p>
-<p><%= link_to "View Recipes", recipes_path %></p>
-<p><%= link_to "View Meal Plan", meals_path %></p>
+</div>
