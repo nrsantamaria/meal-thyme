@@ -4,6 +4,7 @@
 $light-green: rgb(169,218,169);
 $med-green: rgb(123,188,155);
 $dark-green: rgb(62,134,133);
+$light-gray: rgba(242, 242, 242, 0.6);
 
 /*flash*/
 .alert-error {
@@ -53,7 +54,7 @@ body {
 }
 
 .navbar-default {
-  background-color: white;
+  background-color: $light-gray;
   // height: 70px;
   .navbar-brand {
     color: $med-green;
@@ -74,4 +75,8 @@ a {
 
 .hidden {
   display: none;
+}
+
+.jumbotron {
+  background-color: $light-gray;
 }
