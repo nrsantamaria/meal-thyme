@@ -80,3 +80,14 @@ a {
 .jumbotron {
   background-color: $light-gray;
 }
+
+// calendar
+.calendar-heading, thead tr th {
+  text-align: center;
+}
+thead tr th {
+  background-color: $light-green;
+}
+.table-bordered tbody tr {
+  height: 75px;
+}
