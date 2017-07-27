@@ -1,6 +1,10 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+$light-green: rgb(169,218,169);
+$med-green: rgb(123,188,155);
+$dark-green: rgb(62,134,133);
+
 /*flash*/
 .alert-error {
     background-color: #f2dede;
@@ -52,10 +56,18 @@ body {
   background-color: white;
   // height: 70px;
   .navbar-brand {
-    color: #7bbc9b;
+    color: $med-green;
   }
 }
 
 .body {
   margin-bottom: 10%;
+}
+
+a {
+  color: $med-green;
+}
+
+#print-btn {
+  float: right;
 }
