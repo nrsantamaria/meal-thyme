@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 class Seed
 
+
   def self.begin
     seed = Seed.new
     seed.add_recipes
@@ -27,7 +28,7 @@ class Seed
   end
 
   def add_admin
-    User.create!(username: 'admin', email: 'admin@email.com', password: '123456', admin: true)
+    User.create!(username: 'admin', email: 'admin1@email.com', password: '123456', admin: true)
   end
 end
 
