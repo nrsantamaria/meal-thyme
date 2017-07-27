@@ -34,8 +34,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'rest-client'
-gem 'figaro'
 gem 'devise'
 gem 'simple_calendar', '~> 2.0'
 

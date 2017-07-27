@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     collection do
       get :about
       get :faqs
+      get :contact
     end
   end
   root :to => 'home#index'

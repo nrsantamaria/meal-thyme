@@ -11,4 +11,8 @@ class HomeController < ApplicationController
   def faqs
 
   end
+
+  def contact
+
+  end
 end
