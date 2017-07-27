@@ -1,7 +1,8 @@
 class MealsController < ApplicationController
 
   def index
-    @meals = Meal.all
+    @user = current_user
+    @meals = @user.meals
   end
 
   def create
