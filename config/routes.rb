@@ -12,8 +12,10 @@ Rails.application.routes.draw do
     collection do
       get :about
       get :faqs
-      get :contact
     end
   end
+
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   root :to => 'home#index'
 end

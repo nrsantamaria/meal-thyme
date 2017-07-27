@@ -63,6 +63,7 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 ## Resources
 * [DeviseMailer](https://rubyonrailshelp.wordpress.com/2014/01/02/setting-up-mailer-using-devise-for-forgot-password/)
 * [SimpleCalendar](http://excid3.github.io/simple_calendar/)
+* [ContactForm](https://rubyonrailshelp.wordpress.com/2014/01/08/rails-4-simple-form-and-mail-form-to-make-contact-form/)
 
 ## Known Bugs
 * N/A
