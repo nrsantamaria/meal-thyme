@@ -55,14 +55,16 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 |User can add a recipe to a day.|||
 
 ## Further Exploration
-| Behavior |  Input   |  Output  |
-|----------|:--------:|:--------:|
-|User can add 3 recipes to a day|||
-|Grocery list feature so users can add ingredients from recipes to a grocery list|||
-|Grocery list can be emailed to a user.|||
-|User will add specific dietary needs during account set up.|||
-|Base recipe options on user parameters|||
-|About page, FAQ page with how to use system|||
+* User can add 3 recipes to a day
+* Grocery list feature so users can add ingredients from recipes to a grocery list
+* Grocery list can be emailed to a user.
+* User will add specific dietary needs during account set up.
+* Base recipe options on user parameters
+* About page, FAQ page with how to use system
+* Calendar appear on user page using AJAX, buttons for three different view options (day, week, month)
+* Add icons to calendar for meal type and include recipe title.
+* Scroll through recipes organized by meal type, include search feature on recipes page.
+* Devise confirmation for account set up.
 
 ## Resources
 * [DeviseMailer](https://rubyonrailshelp.wordpress.com/2014/01/02/setting-up-mailer-using-devise-for-forgot-password/)
