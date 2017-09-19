@@ -19,7 +19,7 @@
   <div class="form-group">
     <%= f.label :password %>
     <% if @minimum_password_length %>
-    <em><%= @minimum_password_length %> characters minimum</em>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %>
     <%= f.password_field :password, autocomplete: "off", class: "form-control"  %>
   </div>
@@ -30,8 +30,40 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i>
     <%= f.password_field :current_password, autocomplete: "off", class: "form-control"  %>
+  </div>
+
+  <h3>User Specifications</h3>
+  <div class="form-group">
+    <%= f.label :dietary_restrictions %>
+    <%= f.select :dietary_restrictions, options_for_select([
+      ['None', 'None'],
+      ['Vegan', 'Vegan'],
+      ['Nut Allergy', 'Nut Allergy'],
+      ['Wheat Allergy', 'Wheat Allergy'],
+      ['Shellfish Allergy', 'Shellfish Allergy']
+      ]), {}, {class: 'form-control'} %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :calories %>
+    <%= f.number_field :calories, min: 1, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :protein %>
+    <%= f.number_field :protein, min: 1, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :fat %>
+    <%= f.number_field :fat, min: 1, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :carbohydrates %>
+    <%= f.number_field :carbohydrates, min: 1, class: "form-control" %>
   </div>
 
   <div class="form-group">

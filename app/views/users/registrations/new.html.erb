@@ -34,6 +34,23 @@
           </div>
 
           <div class="form-group">
+            <%= f.label :calories %><br />
+            <%= f.number_field :calories, class: "form-control", min: 1 %>
+          </div>
+          <div class="form-group">
+            <%= f.label :protein %><br />
+            <%= f.number_field :protein, class: "form-control", min: 1 %>
+          </div>
+          <div class="form-group">
+            <%= f.label :fat %><br />
+            <%= f.number_field :fat, class: "form-control", min: 1 %>
+          </div>
+          <div class="form-group">
+            <%= f.label :carbohydrates %><br />
+            <%= f.number_field :carbohydrates, class: "form-control", min: 1 %>
+          </div>
+
+          <div class="form-group">
             <%= f.submit "Sign up", {class: "btn btn-default"} %>
           </div>
         <% end %>

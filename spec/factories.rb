@@ -3,6 +3,10 @@ FactoryGirl.define do
     username('Testuser')
     email('testuser@email.com')
     password('123456')
+    calories(2000)
+    protein(50)
+    fat(25)
+    carbohydrates(25)
   end
 
   factory :recipe do
