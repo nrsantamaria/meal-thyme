@@ -52,6 +52,7 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 | Behavior |  Input   |  Output  |
 |----------|:--------:|:--------:|
 |User can create an account.|||
+|User will add specific dietary needs during account set up.|||
 |User can login to an account.|||
 |User can look through a list of recipes.|||
 |User can add a recipe to a day.|||
@@ -59,7 +60,6 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 
 ## Further Exploration
 * User can add 3 recipes to a day.
-* User will add specific dietary needs during account set up.
 * Base recipe options on user parameters.
 (http://formvalidation.io/examples/validating-percentage-values/)
 * Scroll through recipes organized by meal type, include search feature on recipes page.
@@ -68,6 +68,7 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 * About page, FAQ page with how to use system.
 * Add icons to calendar for meal type and include recipe title.
 * Devise confirmation for account set up.
+* Redirects (all paths that can only be accessed after login i.e. recipes path)
 
 ## Resources
 * [DeviseMailer](https://rubyonrailshelp.wordpress.com/2014/01/02/setting-up-mailer-using-devise-for-forgot-password/)

@@ -14,5 +14,6 @@ class UsersController < ApplicationController
 
   def details
     @user = current_user
+    puts(@user.protein + @user.fat + @user.carbohydrates)
   end
 end
