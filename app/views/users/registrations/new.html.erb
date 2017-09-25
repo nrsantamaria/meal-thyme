@@ -33,6 +33,18 @@
             <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control"  %>
           </div>
 
+          <h3>User Specifications</h3>
+          <div class="form-group">
+            <%= f.label :dietary_restrictions %>
+            <%= f.select :dietary_restrictions, options_for_select([
+              ['None', 'None'],
+              ['Vegan', 'Vegan'],
+              ['Nut Allergy', 'Nut Allergy'],
+              ['Wheat Allergy', 'Wheat Allergy'],
+              ['Shellfish Allergy', 'Shellfish Allergy']
+              ]), {}, {class: 'form-control'} %>
+          </div>
+
           <div class="form-group">
             <%= f.label :calories %><br />
             <%= f.number_field :calories, class: "form-control", min: 1 %>

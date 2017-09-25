@@ -3,6 +3,7 @@ FactoryGirl.define do
     username('Testuser')
     email('testuser@email.com')
     password('123456')
+    dietary_restrictions('None')
     calories(2000)
     protein(50)
     fat(25)

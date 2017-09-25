@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-09-19T15:28:16-07:00">2017-09-19T15:28:16-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-09-25T13:49:18-07:00">2017-09-25T13:49:18-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">92.52%</span></span>
+    (<span class="covered_percent"><span class="green">92.69%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.42
+         1.43
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>58</b> files in total.
-    <b>441</b> relevant lines. 
-    <span class="green"><b>408</b> lines covered</span> and
-    <span class="red"><b>33</b> lines missed </span>
+    <b>438</b> relevant lines. 
+    <span class="green"><b>406</b> lines covered</span> and
+    <span class="red"><b>32</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -152,11 +152,11 @@
       
       <tr>
         <td class="strong"><a href="#b7175b8b0208b047de245acb39441db6ed734fb3" class="src_link" title="app/controllers/users/registrations_controller.rb">app/controllers/users/registrations_controller.rb</a></td>
-        <td class="yellow strong">86.36 %</td>
+        <td class="green strong">90.91 %</td>
         <td>60</td>
         <td>22</td>
-        <td>19</td>
-        <td>3</td>
+        <td>20</td>
+        <td>2</td>
         <td>0.9</td>
       </tr>
       
@@ -187,7 +187,7 @@
         <td>10</td>
         <td>9</td>
         <td>1</td>
-        <td>2.3</td>
+        <td>2.5</td>
       </tr>
       
       <tr>
@@ -604,10 +604,10 @@
         <td class="strong"><a href="#35afa6cead2e0fac6ab3ffd3b3caaa84b9207e1f" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>12</td>
-        <td>9</td>
-        <td>9</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -2117,11 +2117,11 @@
         <div class="source_table" id="b7175b8b0208b047de245acb39441db6ed734fb3">
   <div class="header">
     <h3>app/controllers/users/registrations_controller.rb</h3>
-    <h4><span class="yellow">86.36 %</span> covered</h4>
+    <h4><span class="green">90.91 %</span> covered</h4>
     <div>
       <b>22</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <span class="green"><b>20</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -2383,7 +2383,7 @@
         <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
-          <code class="ruby">    devise_parameter_sanitizer.permit(:sign_up, keys: [:username])</code>
+          <code class="ruby">    devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :calories, :protein, :fat, :carbohydrates])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
@@ -2413,7 +2413,7 @@
         <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
-          <code class="ruby">    devise_parameter_sanitizer.permit(:account_update, keys: [:username])</code>
+          <code class="ruby">    devise_parameter_sanitizer.permit(:account_update, keys: [:username, :calories, :protein, :fat, :carbohydrates])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
@@ -2440,8 +2440,8 @@
           <code class="ruby">  def after_sign_up_path_for(resource)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="53">
-          
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
           
           <code class="ruby">    @user</code>
         </li>
@@ -2911,8 +2911,8 @@
           <code class="ruby">    (flash.alert = &quot;You must be logged in to access that page.&quot;;</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="4">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="10" data-linenumber="4">
+          <span class="hits">10</span>
           
           <code class="ruby">    redirect_to &#39;/&#39;) unless current_user</code>
         </li>
@@ -2959,8 +2959,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="12">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="12">
+          <span class="hits">8</span>
           
           <code class="ruby">    @user = current_user</code>
         </li>
@@ -8296,8 +8296,8 @@
     <h3>spec/models/user_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -8347,28 +8347,28 @@
           <code class="ruby">  it { should have_many :meals }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">  it (&quot;confirm macros is less than 100&quot;) do</code>
+          
+          <code class="ruby">  # it (&quot;confirm macros is less than 100&quot;) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">    user1 = User.create({:username =&gt; &#39;jim&#39;, :email =&gt; &#39;jim@email.com&#39;, :password =&gt; &#39;123456&#39;, :protein =&gt; &#39;25&#39;, :fat =&gt; &#39;25&#39;, :carbohydrates =&gt; &#39;55&#39; })</code>
+          
+          <code class="ruby">  #   user1 = User.create({:username =&gt; &#39;jim&#39;, :email =&gt; &#39;jim@email.com&#39;, :password =&gt; &#39;123456&#39;, :protein =&gt; &#39;25&#39;, :fat =&gt; &#39;25&#39;, :carbohydrates =&gt; &#39;55&#39; })</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">    expect(user1.errors.any?).to(eq(true))</code>
+          
+          <code class="ruby">  #   expect(user1.errors.any?).to(eq(true))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
