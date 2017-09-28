@@ -8,7 +8,11 @@
       <div class="col-md-6">
         <%= image_tag(recipe.imageUrl, size: "400x400",  alt:'recipe image', id:'recipe') %>
       </div>
+
       <div class="col-md-6">
+        <div class="well">
+          Cal: <%= recipe.calories %> | Protein: <%= recipe.protein %> g | Fat: <%= recipe.fat %> g | Carbs: <%= recipe.carbohydrates %> g
+        </div>
         <%= form_for @meal do |f| %>
         <%= f.hidden_field :recipe_id, value: recipe.id %>
         <div class="form-group">
@@ -22,6 +26,7 @@
           <%= f.label :date %>
           <%= f.date_field :start_time, class: 'form-control' %>
         </div>
+
         <div class="form-group">
           <%= f.submit "Add Meal", class:'btn btn-default' %>
         </div>

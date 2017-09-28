@@ -13,9 +13,6 @@
           <li><%= step %></li>
         <% end %>
       </ul>
-      <div class="well">
-        Cal: <%= @recipe.calories %> | Protein: <%= @recipe.protein %> | Fat: <%= @recipe.fat %> | Carbs: <%= @recipe.carbohydrates %>
-      </div>
       <% if admin? %>
         <div class="well">
           <%= link_to "Edit", edit_recipe_path(@recipe) %> | <%= link_to "Delete", recipe_path(@recipe), :data => {:confirm => "Are you sure?",

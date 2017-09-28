@@ -60,8 +60,8 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 
 ## Further Exploration
 * User can add 3 recipes to a day.
+* User can remove a recipe from calendar.
 * Base recipe options on user parameters.
-(http://formvalidation.io/examples/validating-percentage-values/)
 * Scroll through recipes organized by meal type, include search feature on recipes page.
 * Grocery list feature so users can add ingredients from recipes to a grocery list.
 * Grocery list can be emailed to a user.
@@ -74,9 +74,10 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 * [DeviseMailer](https://rubyonrailshelp.wordpress.com/2014/01/02/setting-up-mailer-using-devise-for-forgot-password/)
 * [SimpleCalendar](http://excid3.github.io/simple_calendar/)
 * [ContactForm](https://rubyonrailshelp.wordpress.com/2014/01/08/rails-4-simple-form-and-mail-form-to-make-contact-form/)
+* [API](https://market.mashape.com/spoonacular/recipe-food-nutrition#)
 
 ## Known Bugs
-* N/A
+* Macros error message will appear if over 100. Success message will also appear but cannot login.
 
 ## License
 
