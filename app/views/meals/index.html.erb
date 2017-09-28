@@ -1,7 +1,23 @@
 <!-- <div class="row">
   <span id="print-btn" class="btn btn-default"><%= link_to 'Print', meals_path, :onclick => 'window.print();return false;'%></span>
 </div> -->
+<%= calendar number_of_days: 1, events: @meals do |date, meals| %>
+  <%= date %>
+
+  <% meals.each do |meal| %>
+    <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+  <% end %>
+<% end %>
+
 <%= week_calendar events: @meals do |date, meals| %>
+  <%= date %>
+
+  <% meals.each do |meal| %>
+    <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+  <% end %>
+<% end %>
+
+<%= month_calendar events: @meals do |date, meals| %>
   <%= date %>
 
   <% meals.each do |meal| %>
