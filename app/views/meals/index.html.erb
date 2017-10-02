@@ -1,26 +1,35 @@
-<!-- <div class="row">
-  <span id="print-btn" class="btn btn-default"><%= link_to 'Print', meals_path, :onclick => 'window.print();return false;'%></span>
-</div> -->
-<%= calendar number_of_days: 1, events: @meals do |date, meals| %>
-  <%= date %>
+<div class="row">
+  <!-- <span id="print-btn" class="btn btn-default"><%= link_to 'Print', meals_path, :onclick => 'window.print();return false;'%></span> -->
+  <button type="button" name="button" id="day" class="btn btn-default">Today</button>
+  <button type="button" name="button" id="week" class="btn btn-default">Week</button>
+  <button type="button" name="button" id="month" class="btn btn-default">Month</button>
+</div>
+<div class="day_calendar">
+  <%= calendar number_of_days: 1, events: @meals do |date, meals| %>
+    <%= date %>
 
-  <% meals.each do |meal| %>
-    <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+    <% meals.each do |meal| %>
+      <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+    <% end %>
   <% end %>
-<% end %>
+</div>
 
-<%= week_calendar events: @meals do |date, meals| %>
-  <%= date %>
+<div class="week_calendar">
+  <%= week_calendar events: @meals do |date, meals| %>
+    <%= date %>
 
-  <% meals.each do |meal| %>
-    <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+    <% meals.each do |meal| %>
+      <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+    <% end %>
   <% end %>
-<% end %>
+</div>
 
-<%= month_calendar events: @meals do |date, meals| %>
-  <%= date %>
+<div class="month_calendar">
+  <%= month_calendar events: @meals do |date, meals| %>
+    <%= date %>
 
-  <% meals.each do |meal| %>
-    <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+    <% meals.each do |meal| %>
+      <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+    <% end %>
   <% end %>
-<% end %>
+</div>
