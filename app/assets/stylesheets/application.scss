@@ -92,8 +92,20 @@ thead tr th {
   height: 200px;
 }
 
+.table-bordered td {
+  width: 140px;
+}
+
 .cal-item {
-  width: 25px;
+  max-width: 95%;
+  margin: 1%;
+}
+.cal-item img {
+  float: left;
+}
+
+.remove {
+  color: red;
 }
 
 #profile-page {

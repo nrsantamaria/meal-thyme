@@ -6,12 +6,23 @@
 </div>
 
 <div class="day_calendar">
-  <%= calendar number_of_days: 1, events: @meals do |date, meals| %>
+  <%= calendar events: @meals do |date, meals| %>
     <%= date %>
 
     <% meals.each do |meal| %>
-      <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+      <div class="cal-item">
+        <% if meal.category === "Breakfast" %>
+          <%= image_tag("Bicon.png", size: "30x30",  alt:'Bicon', id:'Bicon') %>
+        <% elsif meal.category === "Lunch" %>
+          <%= image_tag("Licon.png", size: "30x30",  alt:'Licon', id:'Licon') %>
+        <% elsif meal.category === "Dinner" %>
+          <%= image_tag("Dicon.png", size: "30x30",  alt:'Dicon', id:'Dicon') %>
+        <% elsif meal.category === "Other" %>
+          <%= image_tag("Oicon.png", size: "30x30",  alt:'Oicon', id:'Oicon') %>
+        <% end %><%= link_to meal.recipe.title, recipe_path(meal.recipe_id) %><%= link_to " X", meal_path(meal), class:'remove', :data => {:confirm => "Are you sure?", :method => "delete"} %>
+      </div>
     <% end %>
+
   <% end %>
 </div>
 
@@ -20,7 +31,17 @@
     <%= date %>
 
     <% meals.each do |meal| %>
-      <div class="cal-item"><%= link_to meal.category, recipe_path(meal.recipe_id) %></div>
+      <div class="cal-item">
+        <% if meal.category === "Breakfast" %>
+          <%= image_tag("Bicon.png", size: "20x20",  alt:'Bicon', id:'Bicon') %>
+        <% elsif meal.category === "Lunch" %>
+          <%= image_tag("Licon.png", size: "20x20",  alt:'Licon', id:'Licon') %>
+        <% elsif meal.category === "Dinner" %>
+          <%= image_tag("Dicon.png", size: "20x20",  alt:'Dicon', id:'Dicon') %>
+        <% elsif meal.category === "Other" %>
+          <%= image_tag("Oicon.png", size: "20x20",  alt:'Oicon', id:'Oicon') %>
+        <% end %><%= link_to meal.recipe.title, recipe_path(meal.recipe_id) %><%= link_to " X", meal_path(meal), class:'remove', :data => {:confirm => "Are you sure?", :method => "delete"} %>
+      </div>
     <% end %>
   <% end %>
 </div>
@@ -31,8 +52,15 @@
 
     <% meals.each do |meal| %>
       <div class="cal-item">
-        <%= meal.recipe.title %>
-        <%= link_to meal.category, recipe_path(meal.recipe_id) %> <%= link_to "X", meal_path(meal), :data => {:confirm => "Are you sure?", :method => "delete"} %>
+        <% if meal.category === "Breakfast" %>
+          <%= image_tag("Bicon.png", size: "20x20",  alt:'Bicon', id:'Bicon') %>
+        <% elsif meal.category === "Lunch" %>
+          <%= image_tag("Licon.png", size: "20x20",  alt:'Licon', id:'Licon') %>
+        <% elsif meal.category === "Dinner" %>
+          <%= image_tag("Dicon.png", size: "20x20",  alt:'Dicon', id:'Dicon') %>
+        <% elsif meal.category === "Other" %>
+          <%= image_tag("Oicon.png", size: "20x20",  alt:'Oicon', id:'Oicon') %>
+        <% end %><%= link_to meal.recipe.title, recipe_path(meal.recipe_id) %><%= link_to " X", meal_path(meal), class:'remove', :data => {:confirm => "Are you sure?", :method => "delete"} %>
       </div>
     <% end %>
   <% end %>
