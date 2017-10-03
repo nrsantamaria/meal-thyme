@@ -11,6 +11,12 @@ class MealsController < ApplicationController
     redirect_to user_path(@user)
   end
 
+  def destroy
+    @meal = Meal.find(params[:id])
+    @meal.destroy
+    redirect_to user_path(@meal.user)
+  end
+
   private
   def meal_params
     params.require(:meal).permit(:category, :start_time, :recipe_id)

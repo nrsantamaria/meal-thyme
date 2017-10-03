@@ -10,6 +10,8 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
+require "active_support"
+require "active_support/core_ext/module/delegation.rb"
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
