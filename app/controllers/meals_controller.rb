@@ -21,7 +21,7 @@ class MealsController < ApplicationController
     @user = current_user
     @meals = @user.meals
     respond_to do |format|
-      format.html {render partial: "day_cal"}
+      format.html {render partial:"day_cal", locals: {events: @events} }
       format.js
     end
   end

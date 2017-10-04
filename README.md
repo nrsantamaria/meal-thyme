@@ -78,6 +78,7 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 
 ## Known Bugs
 * Macros error message will appear if over 100. Success message will also appear but cannot login.
+* Rendering issue for AJAX request on calendars when using the previous or next link.
 
 ## License
 
