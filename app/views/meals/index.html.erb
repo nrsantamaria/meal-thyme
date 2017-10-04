@@ -7,8 +7,9 @@
 
 <div class="day_calendar">
   <%= calendar(number_of_days: 1, events: @meals) do |date, meals| %>
-    <%= date %>
+    <h4><%= date %></h4> 
 
+    <% total_calories = 0 %><% total_protein = 0 %><% total_fat = 0 %><% total_carbohydrates = 0 %>
     <% meals.each do |meal| %>
       <div class="cal-item">
         <% if meal.category === "Breakfast" %>
@@ -21,8 +22,16 @@
           <%= image_tag("Oicon.png", size: "20x20",  alt:'Oicon', id:'Oicon') %>
         <% end %><%= link_to meal.recipe.title, recipe_path(meal.recipe_id) %><%= link_to " X", meal_path(meal), class:'remove', :data => {:confirm => "Are you sure?", :method => "delete"} %>
       </div>
+      <% total_calories = total_calories + meal.recipe.calories %>
+      <% total_protein = total_protein + meal.recipe.protein %>
+      <% total_fat = total_fat + meal.recipe.fat %>
+      <% total_carbohydrates = total_carbohydrates + meal.recipe.carbohydrates %>
     <% end %>
 
+    <div class="well">
+      <h4>Total Macros</h4>
+      Cal: <%= total_calories %> | Protein: <%= total_protein %> g | Fat: <%= total_fat %> g | Carbs: <%= total_carbohydrates %> g
+    </div>
   <% end %>
 </div>
 

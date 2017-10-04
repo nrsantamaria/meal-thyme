@@ -68,7 +68,9 @@ body {
 a {
   color: $med-green;
 }
-
+.well {
+  text-align: center;
+}
 #print-btn {
   float: right;
 }
@@ -82,9 +84,6 @@ a {
 }
 
 // calendar
-.day_calendar, .week_calendar, .month_calendar{
-  display: none;
-}
 
 .calendar-heading, thead tr th {
   text-align: center;
