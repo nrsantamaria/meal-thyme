@@ -1,107 +1,33 @@
-<div class="row">
-  <span id="print-btn" class="btn btn-default"><%= link_to 'Print', meals_path, :onclick => 'window.print();return false;'%></span>
+<h2>Meal Plans</h2>
+<nav class="nav navbar">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <%= link_to "Today",  day_calendar_meals_path(), id:'day-calendar-link', remote: true %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Week",  week_calendar_meals_path(), id:'week-calendar-link', remote: true %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Month",  month_calendar_meals_path(), id:'month-calendar-link', remote: true %>
+    </li>
+    <li class="nav-item active pull-right">
+      <%= link_to 'Print', meals_path, :onclick => 'window.print();return false;', class:"pull-right"%>
+    </li>
+  </ul>
+</nav>
+
+<!-- <div class="row">
   <button type="button" name="button" id="day" class="btn btn-default">Today</button>
   <button type="button" name="button" id="week" class="btn btn-default">Week</button>
   <button type="button" name="button" id="month" class="btn btn-default">Month</button>
+  <span id="print-btn" class="btn btn-default"><%= link_to 'Print', meals_path, :onclick => 'window.print();return false;'%></span>
+</div> -->
+<div id="day-calendar">
+
 </div>
+<div id="week-calendar">
 
-<div class="day_calendar">
-  <%= calendar(number_of_days: 1, events: @meals) do |date, meals| %>
-    <h4><%= date %></h4>
-
-    <% total_calories = 0 %><% total_protein = 0 %><% total_fat = 0 %><% total_carbohydrates = 0 %>
-    <% meals.each do |meal| %>
-      <div class="cal-item">
-        <% if meal.category === "Breakfast" %>
-          <%= image_tag("Bicon.png", size: "20x20",  alt:'Bicon', id:'Bicon') %>
-        <% elsif meal.category === "Lunch" %>
-          <%= image_tag("Licon.png", size: "20x20",  alt:'Licon', id:'Licon') %>
-        <% elsif meal.category === "Dinner" %>
-          <%= image_tag("Dicon.png", size: "20x20",  alt:'Dicon', id:'Dicon') %>
-        <% elsif meal.category === "Other" %>
-          <%= image_tag("Oicon.png", size: "20x20",  alt:'Oicon', id:'Oicon') %>
-        <% end %><%= link_to meal.recipe.title, recipe_path(meal.recipe_id) %><%= link_to " X", meal_path(meal), class:'remove', :data => {:confirm => "Are you sure?", :method => "delete"} %>
-      </div>
-      <% total_calories = total_calories + meal.recipe.calories %>
-      <% total_protein = total_protein + meal.recipe.protein %>
-      <% total_fat = total_fat + meal.recipe.fat %>
-      <% total_carbohydrates = total_carbohydrates + meal.recipe.carbohydrates %>
-    <% end %>
-    <% if meals.any? %>
-      <div class="well">
-        <h4>Total Macros</h4>
-        Cal: <%= total_calories %> | Protein: <%= total_protein %> g | Fat: <%= total_fat %> g | Carbs: <%= total_carbohydrates %> g
-      </div>
-    <% end %>
-  <% end %>
 </div>
+<div id="month-calendar">
 
-<div class="week_calendar">
-  <%= week_calendar events: @meals do |date, meals| %>
-    <h5><%= date %></h5>
-
-    <% total_calories = 0 %><% total_protein = 0 %><% total_fat = 0 %><% total_carbohydrates = 0 %>
-    <% meals.each do |meal| %>
-      <div class="cal-item">
-        <% if meal.category === "Breakfast" %>
-          <%= image_tag("Bicon.png", size: "20x20",  alt:'Bicon', id:'Bicon') %>
-        <% elsif meal.category === "Lunch" %>
-          <%= image_tag("Licon.png", size: "20x20",  alt:'Licon', id:'Licon') %>
-        <% elsif meal.category === "Dinner" %>
-          <%= image_tag("Dicon.png", size: "20x20",  alt:'Dicon', id:'Dicon') %>
-        <% elsif meal.category === "Other" %>
-          <%= image_tag("Oicon.png", size: "20x20",  alt:'Oicon', id:'Oicon') %>
-        <% end %><%= link_to meal.recipe.title, recipe_path(meal.recipe_id) %><%= link_to " X", meal_path(meal), class:'remove', :data => {:confirm => "Are you sure?", :method => "delete"} %>
-      </div>
-      <% total_calories = total_calories + meal.recipe.calories %>
-      <% total_protein = total_protein + meal.recipe.protein %>
-      <% total_fat = total_fat + meal.recipe.fat %>
-      <% total_carbohydrates = total_carbohydrates + meal.recipe.carbohydrates %>
-    <% end %>
-
-    <% if meals.any? %>
-      <div class="well">
-        <strong>Total Macros</strong><br>
-        Cal: <%= total_calories %><br>
-        Protein: <%= total_protein %> g<br>
-        Fat: <%= total_fat %> g<br>
-        Carbs: <%= total_carbohydrates %> g
-      </div>
-    <% end %>
-  <% end %>
-</div>
-
-<div class="month_calendar">
-  <%= month_calendar events: @meals do |date, meals| %>
-    <%= date %>
-
-    <% total_calories = 0 %><% total_protein = 0 %><% total_fat = 0 %><% total_carbohydrates = 0 %>
-    <% meals.each do |meal| %>
-      <div class="cal-item">
-        <% if meal.category === "Breakfast" %>
-          <%= image_tag("Bicon.png", size: "20x20",  alt:'Bicon', id:'Bicon') %>
-        <% elsif meal.category === "Lunch" %>
-          <%= image_tag("Licon.png", size: "20x20",  alt:'Licon', id:'Licon') %>
-        <% elsif meal.category === "Dinner" %>
-          <%= image_tag("Dicon.png", size: "20x20",  alt:'Dicon', id:'Dicon') %>
-        <% elsif meal.category === "Other" %>
-          <%= image_tag("Oicon.png", size: "20x20",  alt:'Oicon', id:'Oicon') %>
-        <% end %><%= link_to meal.recipe.title, recipe_path(meal.recipe_id) %><%= link_to " X", meal_path(meal), class:'remove', :data => {:confirm => "Are you sure?", :method => "delete"} %>
-      </div>
-      <% total_calories = total_calories + meal.recipe.calories %>
-      <% total_protein = total_protein + meal.recipe.protein %>
-      <% total_fat = total_fat + meal.recipe.fat %>
-      <% total_carbohydrates = total_carbohydrates + meal.recipe.carbohydrates %>
-    <% end %>
-
-    <% if meals.any? %>
-      <div class="well">
-        <strong>Total Macros</strong><br>
-        Cal: <%= total_calories %><br>
-        Protein: <%= total_protein %> g<br>
-        Fat: <%= total_fat %> g<br>
-        Carbs: <%= total_carbohydrates %> g
-      </div>
-    <% end %>
-  <% end %>
 </div>

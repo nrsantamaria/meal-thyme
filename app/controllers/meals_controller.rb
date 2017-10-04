@@ -17,6 +17,19 @@ class MealsController < ApplicationController
     redirect_to user_path(@meal.user)
   end
 
+  def day_calendar
+    @user = current_user
+    @meals = @user.meals
+  end
+  def week_calendar
+    @user = current_user
+    @meals = @user.meals
+  end
+  def month_calendar
+    @user = current_user
+    @meals = @user.meals
+  end
+
   private
   def meal_params
     params.require(:meal).permit(:category, :start_time, :recipe_id)

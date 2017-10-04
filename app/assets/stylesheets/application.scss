@@ -71,9 +71,6 @@ a {
 .well {
   text-align: center;
 }
-#print-btn {
-  float: right;
-}
 
 .hidden {
   display: none;
@@ -81,6 +78,10 @@ a {
 
 .jumbotron {
   background-color: $light-gray;
+}
+
+h2 {
+  text-align: center;
 }
 
 // calendar

@@ -10,8 +10,17 @@ Rails.application.routes.draw do
       get :details
     end
   end
+
   resources :recipes
-  resources :meals
+
+  resources :meals do
+    collection do
+      get :day_calendar
+      get :week_calendar
+      get :month_calendar
+    end
+  end
+
   resources :home do
     collection do
       get :about

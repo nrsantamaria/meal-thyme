@@ -57,16 +57,16 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 |User can look through a list of recipes.|||
 |User can add a recipe to a day.|||
 |Calendar appear on user page using buttons for three different view options (day, week, month).|||
+|User can remove a meal from calendar.|||
+|User can see total macros for a day on calendar.|||
+|Icons are used on calendar for meal type and include recipe title.|||
 
 ## Further Exploration
-* User can add 3 recipes to a day.
-* User can remove a recipe from calendar.
 * Base recipe options on user parameters.
 * Scroll through recipes organized by meal type, include search feature on recipes page.
 * Grocery list feature so users can add ingredients from recipes to a grocery list.
 * Grocery list can be emailed to a user.
 * About page, FAQ page with how to use system.
-* Add icons to calendar for meal type and include recipe title.
 * Devise confirmation for account set up.
 * Redirects (all paths that can only be accessed after login i.e. recipes path)
 
