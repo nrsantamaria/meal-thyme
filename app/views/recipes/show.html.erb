@@ -7,6 +7,9 @@
       <%= image_tag(@recipe.imageUrl, size: "400x400",  alt:'recipe image', id:'recipeImg') %>
     </div>
     <div class="col-md-6">
+      <div class="well">
+        Cal: <%= @recipe.calories %> | Protein: <%= @recipe.protein %> g | Fat: <%= @recipe.fat %> g | Carbs: <%= @recipe.carbohydrates %> g
+      </div>
       <h4>Instructions</h4>
       <ul>
         <% @recipe.instructions.each do |step| %>

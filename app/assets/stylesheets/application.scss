@@ -82,11 +82,19 @@ a {
 }
 
 // calendar
+.day_calendar, .week_calendar, .month_calendar{
+  display: none;
+}
+
 .calendar-heading, thead tr th {
   text-align: center;
 }
 thead tr th {
   background-color: $light-green;
+}
+.day_calendar .simple-calendar {
+  width: 60% !important;
+  margin: 0 auto;
 }
 .table-bordered tbody tr {
   height: 200px;
@@ -96,12 +104,14 @@ thead tr th {
   width: 140px;
 }
 
+
 .cal-item {
   max-width: 95%;
   margin: 1%;
 }
 .cal-item img {
   float: left;
+  margin-right: 1%;
 }
 
 .remove {
