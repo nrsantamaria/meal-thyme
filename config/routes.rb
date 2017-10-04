@@ -15,9 +15,9 @@ Rails.application.routes.draw do
 
   resources :meals do
     collection do
-      get :day_calendar
-      get :week_calendar
-      get :month_calendar
+      get :day_cal
+      get :week_cal
+      get :month_cal
     end
   end
 

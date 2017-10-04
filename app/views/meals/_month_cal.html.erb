@@ -1,5 +1,5 @@
 <div class="month_calendar">
-  <%= month_calendar events: @meals do |date, meals| %>
+  <%= month_calendar(events: @meals, previous_link: events_ajax_previous_link, next_link: events_ajax_next_link) do |date, meals| %>
     <%= date %>
 
     <% total_calories = 0 %><% total_protein = 0 %><% total_fat = 0 %><% total_carbohydrates = 0 %>

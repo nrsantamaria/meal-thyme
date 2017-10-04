@@ -2,13 +2,13 @@
 <nav class="nav navbar">
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <%= link_to "Today",  day_calendar_meals_path(), id:'day-calendar-link', remote: true %>
+      <%= link_to "Today",  day_cal_meals_path(), id:'day-calendar-link', remote: true %>
     </li>
     <li class="nav-item">
-      <%= link_to "Week",  week_calendar_meals_path(), id:'week-calendar-link', remote: true %>
+      <%= link_to "Week",  week_cal_meals_path(), id:'week-calendar-link', remote: true %>
     </li>
     <li class="nav-item">
-      <%= link_to "Month",  month_calendar_meals_path(), id:'month-calendar-link', remote: true %>
+      <%= link_to "Month",  month_cal_meals_path(), id:'month-calendar-link', remote: true %>
     </li>
     <li class="nav-item active pull-right">
       <%= link_to 'Print', meals_path, :onclick => 'window.print();return false;', class:"pull-right"%>
@@ -16,18 +16,12 @@
   </ul>
 </nav>
 
-<!-- <div class="row">
-  <button type="button" name="button" id="day" class="btn btn-default">Today</button>
-  <button type="button" name="button" id="week" class="btn btn-default">Week</button>
-  <button type="button" name="button" id="month" class="btn btn-default">Month</button>
-  <span id="print-btn" class="btn btn-default"><%= link_to 'Print', meals_path, :onclick => 'window.print();return false;'%></span>
-</div> -->
 <div id="day-calendar">
-
+  <%= render partial:"day_cal", locals: {events: @events}  %>
 </div>
 <div id="week-calendar">
-
+  <%= render partial:"week_cal", locals: {events: @events}  %>
 </div>
 <div id="month-calendar">
-
+  <%= render partial:"month_cal", locals: {events: @events}  %>
 </div>

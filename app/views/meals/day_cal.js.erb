@@ -1,0 +1,10 @@
+$('#day-calendar').show().html('<%= j render "day_cal", locals: {events: @events}  %>');
+$('body').click(function(){
+  $('#day-calendar').hide()
+});
+$('#week-calendar-link').click(function(){
+  $('#day-calendar').hide()
+});
+$('#month-calendar-link').click(function(){
+  $('#day-calendar').hide()
+});

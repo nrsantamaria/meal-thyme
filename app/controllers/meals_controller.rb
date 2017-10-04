@@ -17,17 +17,29 @@ class MealsController < ApplicationController
     redirect_to user_path(@meal.user)
   end
 
-  def day_calendar
+  def day_cal
     @user = current_user
     @meals = @user.meals
+    respond_to do |format|
+      format.html {render partial: "day_cal"}
+      format.js
+    end
   end
-  def week_calendar
+  def week_cal
     @user = current_user
     @meals = @user.meals
+    respond_to do |format|
+      format.html {render partial: "week_cal"}
+      format.js
+    end
   end
-  def month_calendar
+  def month_cal
     @user = current_user
     @meals = @user.meals
+    respond_to do |format|
+      format.html {render partial: "month_cal"}
+      format.js
+    end
   end
 
   private
