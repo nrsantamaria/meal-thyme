@@ -13,13 +13,7 @@ Rails.application.routes.draw do
 
   resources :recipes
 
-  resources :meals do
-    collection do
-      get :day_cal
-      get :week_cal
-      get :month_cal
-    end
-  end
+  resources :meals
 
   resources :home do
     collection do

@@ -68,6 +68,10 @@ body {
 a {
   color: $med-green;
 }
+
+a:hover {
+  color: $dark-green;
+}
 .well {
   text-align: center;
 }
@@ -122,6 +126,10 @@ thead tr th {
   margin-top: 2%;
 }
 
-#day-calendar, #week-calendar, #month-calendar {
+.hidden {
   display: none;
+}
+
+.recipe-image img {
+  margin: 0 auto;
 }

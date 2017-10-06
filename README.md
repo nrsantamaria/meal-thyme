@@ -56,17 +56,19 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 |User can login to an account.|||
 |User can look through a list of recipes.|||
 |User can add a recipe to a day.|||
-|Calendar appear on user page using buttons for three different view options (day, week, month).|||
+|Calendars appear on user page.|||
 |User can remove a meal from calendar.|||
 |User can see total macros for a day on calendar.|||
 |Icons are used on calendar for meal type and include recipe title.|||
 
 ## Further Exploration
+* About page, FAQ page with how to use system.
+* Set up mobile optimization.
+* Specific calendar appear on user page using buttons for three different view options (hide/show feature).
 * Base recipe options on user parameters.
-* Scroll through recipes organized by meal type, include search feature on recipes page.
+* Search feature on recipes page by ingredients.
 * Grocery list feature so users can add ingredients from recipes to a grocery list.
 * Grocery list can be emailed to a user.
-* About page, FAQ page with how to use system.
 * Devise confirmation for account set up.
 * Redirects (all paths that can only be accessed after login i.e. recipes path)
 
@@ -74,7 +76,7 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 * [DeviseMailer](https://rubyonrailshelp.wordpress.com/2014/01/02/setting-up-mailer-using-devise-for-forgot-password/)
 * [SimpleCalendar](http://excid3.github.io/simple_calendar/)
 * [ContactForm](https://rubyonrailshelp.wordpress.com/2014/01/08/rails-4-simple-form-and-mail-form-to-make-contact-form/)
-* [API](https://market.mashape.com/spoonacular/recipe-food-nutrition#)
+* [API](https://market.mashape.com/spoonacular/recipe-food-nutrition#search-recipes-complex)
 
 ## Known Bugs
 * Macros error message will appear if over 100. Success message will also appear but cannot login.
