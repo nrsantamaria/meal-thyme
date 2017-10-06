@@ -1,12 +1,19 @@
 <div class="jumbotron title">
   <div class="row">
     <div class="col-md-6">
-      <%= image_tag('white-text-logo.png', size: "400x400",  alt:'logo', id:'logo') %>
+      <%= image_tag('white-text-logo.png', size: "300x300",  alt:'logo', id:'logo') %>
     </div>
     <div class="col-md-6">
+      <% if !current_user  %>
       <div class="sign-in">
         <%= render 'users/sessions/new' %>
       </div>
+      <% else %>
+      <div class="sign-out">
+        <h2>Thanks for checking out Meal Thyme! Hope you have a delicious day planned!</h2>
+        <%= link_to "Sign Out", destroy_user_session_path, method: 'delete' %>
+      </div>
+      <% end %>
     </div>
   </div>
 </div>

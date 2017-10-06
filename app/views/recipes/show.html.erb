@@ -4,7 +4,10 @@
   </div>
   <div class="panel-body">
     <div class="col-md-6">
-      <%= image_tag(@recipe.imageUrl, size: "400x400",  alt:'recipe image', id:'recipeImg') %>
+      <div class="recipe-image">
+        <%= image_tag(@recipe.imageUrl, size: "250x250",  alt:'recipe image', id:'recipeImg', class:'img-responsive') %>
+      </div>
+      <br>
     </div>
     <div class="col-md-6">
       <div class="well">

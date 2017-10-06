@@ -62,8 +62,7 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 |Icons are used on calendar for meal type and include recipe title.|||
 
 ## Further Exploration
-* About page, FAQ page with how to use system.
-* Set up mobile optimization.
+* About page & FAQ page with how to use system. Screen shots.
 * Specific calendar appear on user page using buttons for three different view options (hide/show feature).
 * Base recipe options on user parameters.
 * Search feature on recipes page by ingredients.

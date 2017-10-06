@@ -11,9 +11,9 @@ class User < ApplicationRecord
   validates :calories, :protein, :fat, :carbohydrates, presence: true, unless: :admin?
 
 
-  before_save do |user|
-    if ((user.protein + user.fat + user.carbohydrates) >= 100)
-      user.errors.add(:message, "Your macros should be less than 100.")
-    end
-  end
+  # before_save do |user|
+  #   if ((user.protein + user.fat + user.carbohydrates) >= 100)
+  #     user.errors.add(:message, "Your macros should be less than 100.")
+  #   end
+  # end
 end
