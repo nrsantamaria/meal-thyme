@@ -62,10 +62,10 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 |Icons are used on calendar for meal type and include recipe title.|||
 
 ## Further Exploration
-* About page & FAQ page with how to use system. Screen shots.
 * Specific calendar appear on user page using buttons for three different view options (hide/show feature).
 * Base recipe options on user parameters.
 * Search feature on recipes page by ingredients.
+* Sort meals on day Breakfast, Lunch, Dinner.
 * Grocery list feature so users can add ingredients from recipes to a grocery list.
 * Grocery list can be emailed to a user.
 * Devise confirmation for account set up.
@@ -88,6 +88,14 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 ```
 Copyright (c) 2017 Nicky Santamaria
 ```
-<!-- future home of some screenshots :)
+
 ## Home Page
-![Home page](app/assets/images/home.png) -->
+![Home page](app/assets/images/home.png)
+## Profile Page
+![Profile page](app/assets/images/profile.png)
+## Recipes Page
+![Recipes page](app/assets/images/recipes.png)
+## Recipe Page
+![Recipe page](app/assets/images/recipe.png)
+## Meal Plan Page
+![Meal Plan page](app/assets/images/meal.plan.png)
