@@ -12,7 +12,6 @@ An meal planning app. [Heroku](https://meal-thyme.herokuapp.com/)
 * [Rails](http://rubyonrails.org/)
 * [PostgreSQL](https://www.postgresql.org/docs/9.2/static/app-psql.html)
 * [Git](https://git-scm.com/)
-* [Materialize](http://materializecss.com/)
 * AJAX
 
 ## Installation
