@@ -20,10 +20,23 @@ class Seed
     recipes.each do |recipe|
       instructionsObject = recipe['analyzedInstructions'][0]['steps']
       steps = [];
+      ingredients = [];
+      diets = [];
+
+      recipe['diets'].each do |diet|
+        diets.push(diet)
+      end
+
       instructionsObject.each do |instruction|
       	steps.push(instruction['step'])
+
+        ingredientsObject = instruction['ingredients']
+        ingredientsObject.each do |ingredient|
+          ingredients.push(ingredient['name'])
+        end
       end
-      Recipe.create!(title: recipe['title'], imageUrl: recipe['image'], calories: recipe['calories'], protein: recipe['protein'], fat: recipe['fat'], carbohydrates: recipe['carbs'], instructions: steps)
+
+      Recipe.create!(title: recipe['title'], imageUrl: recipe['image'], calories: recipe['calories'], protein: recipe['protein'], fat: recipe['fat'], carbohydrates: recipe['carbs'], instructions: steps, ingredients: ingredients, diets: diets)
     end
   end
 

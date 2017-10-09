@@ -53,7 +53,6 @@ ActiveRecord::Schema.define(version: 20171009214748) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "admin", default: false
-    t.string "dietary_restrictions"
     t.integer "calories"
     t.integer "protein"
     t.integer "fat"
