@@ -15,6 +15,20 @@
       <div class="col-md-6">
         <div class="well">
           Cal: <%= recipe.calories %> | Protein: <%= recipe.protein %> g | Fat: <%= recipe.fat %> g | Carbs: <%= recipe.carbohydrates %> g
+          <br>
+          <% recipe.diets.each do |diet| %>
+            <% if diet === "dairy free" %>
+              <%= image_tag("milk-icon.png", size: "30x30",  alt:'milk-icon', id:'milk-icon') %>
+            <% elsif diet === "gluten free" %>
+              <%= image_tag("wheat-icon.png", size: "30x30",  alt:'wheat-icon', id:'wheat-icon') %>
+            <% elsif diet === "vegan" || diet === "vegetarian" %>
+              <%= image_tag("vegan-icon.png", size: "30x30",  alt:'vegan-icon', id:'vegan-icon') %>
+            <% elsif diet === "nut allergy" %>
+              <%= image_tag("nut-icon.png", size: "30x30",  alt:'nut-icon', id:'nut-icon') %>
+            <% elsif diet === "shellfish allergy" %>
+              <%= image_tag("shellfish-icon.png", size: "30x30",  alt:'shellfish-icon', id:'shellfish-icon') %>
+            <% end %>
+          <% end %>
         </div>
         <%= form_for @meal do |f| %>
         <%= f.hidden_field :recipe_id, value: recipe.id %>

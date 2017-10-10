@@ -61,10 +61,11 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 |Icons are used on calendar for meal type and include recipe title.|||
 
 ## Further Exploration
+* Filter on recipes page by dietary restrictions.
+* Search feature on recipes page by ingredients.
 * Specific calendar appear on user page using buttons for three different view options (hide/show feature).
 * Base recipe options on user parameters.
-* Search feature on recipes page by ingredients.
-* Sort meals on day Breakfast, Lunch, Dinner.
+* Sort meal plan on day Breakfast, Lunch, Dinner.
 * Grocery list feature so users can add ingredients from recipes to a grocery list.
 * Grocery list can be emailed to a user.
 * Devise confirmation for account set up.

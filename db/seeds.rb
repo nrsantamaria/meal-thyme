@@ -36,7 +36,7 @@ class Seed
         end
       end
 
-      Recipe.create!(title: recipe['title'], imageUrl: recipe['image'], calories: recipe['calories'], protein: recipe['protein'], fat: recipe['fat'], carbohydrates: recipe['carbs'], instructions: steps, ingredients: ingredients, diets: diets)
+      Recipe.create!(title: recipe['title'].titleize, imageUrl: recipe['image'], calories: recipe['calories'], protein: recipe['protein'], fat: recipe['fat'], carbohydrates: recipe['carbs'], instructions: steps, ingredients: ingredients, diets: diets)
     end
   end
 
